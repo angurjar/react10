@@ -1,0 +1,34 @@
+/* styles/Dashboard.css */
+.dashboard-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+  }
+  
+  .dashboard-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-section {
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .dashboard-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .dashboard-section li {
+    margin-bottom: 5px;
+  }
+  
