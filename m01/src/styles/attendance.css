@@ -1,4 +1,4 @@
-.page {
+.pages {
   background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
   padding: 20px;
   border-radius: 50px;
@@ -16,18 +16,18 @@
   width: 100%;
 }
 
-.header {
+.headers {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.profile {
+.profiles {
   display: flex;
   align-items: center;
 }
 
-.profile-pic {
+.profile-pics {
   border-radius: 100%;
   width: 100px;
   height: 50px;
