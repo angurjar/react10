@@ -1,0 +1,152 @@
+.page {
+  background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+  padding: 20px;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%S;
+  margin: auto;
+  font-family: 'Arial, sans-serif';
+}
+
+.employee-container {
+  padding: 20px;
+  background-color: rgb(61, 57, 57);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  border-radius: 100%;
+  width: 100px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact {
+  font-size: 1.2em;
+}
+
+.calendar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.calendar-header {
+  display: contents;
+  font-weight: bold;
+  text-align: center;
+}
+
+.calendar-body {
+  display: contents;
+}
+
+.calendar-day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  background-color: rgba(27, 26, 26, 0.9);
+  border: 1px solid #1b1919;
+  border-radius: 5px;
+}
+
+.calendar-day.empty {
+  background-color: transparent;
+  border: none;
+}
+
+.calendar-day.approved {
+  background-color: green;
+}
+
+.calendar-day.pending {
+  background-color: orange;
+}
+
+.calendar-day.rejected {
+  background-color: red;
+}
+
+.attendance-summary {
+  margin: 20px 0;
+}
+
+.chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.chart-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: conic-gradient(green calc(var(--percentage) * 1%), red 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: green;
+}
+
+.status {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.approved .dot {
+  background-color: green;
+}
+
+.pending .dot {
+  background-color: orange;
+}
+
+.rejected .dot {
+  background-color: red;
+}

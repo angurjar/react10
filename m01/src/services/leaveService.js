@@ -1,6 +1,6 @@
 import  axios from  'axios'
 const LeaveServices={
-getLeaves:async()=>{
+    getAllLeaves:async()=>{
     const response=await axios.get()
     return response.data
 }

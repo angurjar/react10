@@ -24,7 +24,7 @@ const Leave = () => {
   };
 
   return (
-    <div>
+    <div className='page'>
       <h2>Leave Requests</h2>
       <form onSubmit={handleLeaveSubmit}>
         <label>Type:</label>

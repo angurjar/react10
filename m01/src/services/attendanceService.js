@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 const attendanceService = {
-  getAttendance: async () => {
+  getAllAttendance: async () => {
     const response = await axios.get();
     return response.data;
   },
