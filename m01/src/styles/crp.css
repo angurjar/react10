@@ -1,0 +1,32 @@
+.crypto-prices {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    margin: 20px;
+  }
+  
+  .crypto-prices h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .price-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #555;
+  }
+  
+  .price-item.positive {
+    color: #4caf50;
+  }
+  
+  .price-item.negative {
+    color: #f44336;
+  }
+  
+  .price-change {
+    margin-left: 10px;
+  }
+  

@@ -1,44 +1,38 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes,  } from 'react-router-dom';
-import { ThemeProvider } from 'styled-components';
-import { darkTheme } from './styles/theme';
-import { GlobalStyles } from './styles/globalStyle';
-import { TransitionGroup } from 'react-transition-group';
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/header';
 import Footer from './components/footer';
-import Employee from './components/employee';
-import Attendance from './components/attendance';
+import LoginPage from './components/login';
+import RegisterPage from './components/register';
+// import CryptoPrices from './components/cryptoprices';
+
+
+import PriceAlerts from './components/pricealerts';
+
+import BackgroundScroll from './components/backgroundscroll';
 import Dashboard from './components/dashboard';
-import Leave from './components/leave';
-import Profile from './components/profile';
 
-const App = () => {
-
-
+function App() {
   return (
-    <ThemeProvider theme={darkTheme}>
-      <GlobalStyles />
-      <TransitionGroup className="transition-group">
-    
-          <Router>
-            <div className="App">
-              <Header className="header" />
-              <div className="container">
-                <Routes>
-                  <Route path="/" element={<Dashboard />} />
-                  <Route path="/Employee" element={<Employee />} />
-                  <Route path="/Leave" element={<Leave />} />
-                  <Route path="/Attendance" element={<Attendance />} />
-                  <Route path="/Profile" element={<Profile />} />
-                </Routes>
-              </div>
-              <Footer className="footer" />
-            </div>
-        </Router>
-      </TransitionGroup>
-    </ThemeProvider>
+    <Router>
+      <div>
+        <BackgroundScroll />
+        <Header />
+        <main>
+          <Routes>
+       +
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/register" element={<RegisterPage />} />
+          </Routes>
+          <PriceAlerts />
+      
+        
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
-};
+}
 
 export default App;
